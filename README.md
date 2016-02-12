@@ -13,9 +13,7 @@ Your assignment is to create a professional website for yourself. The objective 
 1. Pushing your commits back to GitHub
 1. Deploying your project to a production environment like [Surge][Surge]
 
-Talking about oneself is hard and takes practice. This project is a great opportunity to flex those muscles. Consider this project to be a sandbox. In other words, you can use whatever layout, visuals, and content that you want.
-
-Since it's such an open-ended project, here are some tips to help you focus.
+Talking about oneself is hard and takes practice. This project is a great opportunity to flex those muscles. Consider this project to be a sandbox. In other words, you can use whatever layout, visuals, and content that you want. Since it's such an open-ended project, here are some tips to help you focus.
 
 - If you're feeling more serious, describe your past work history, projects, and outcomes.
 - If you're feeling more light-hearted, describe where you see yourself in 1, 5, or 10 years from now.
