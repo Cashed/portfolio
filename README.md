@@ -23,8 +23,8 @@ Talking about oneself is hard and takes practice. This project is a great opport
   - Will the reader know all the important moments by the end?
   - Will the reader's attention start to drift by the end?
 - Once you've refined your story, layout your content in a wireframe.
-- Limit your project to a maximum of three pages. In fact, one long page is fine.
-- Write clean, well-indented, and readable code. It may take you a little longer, but it'll be easier modify in the future.
+- Limit your project to anywhere between 1 and 3 three pages.
+- Write clean, well-indented, and readable code. It may take you a little longer, but it'll be easier find bugs.
 
 [Bootstrap]: http://getbootstrap.com/getting-started/
 [Surge]: http://surge.sh/help/getting-started-with-surge
