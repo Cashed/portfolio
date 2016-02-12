@@ -4,7 +4,7 @@ Your assignment is to create a professional website for yourself. The objective 
 
 1. Designing your project with wireframes first
 1. Forking this repository to your GitHub account
-1. Cloning you fork to your development environment
+1. Cloning your fork to your development environment
 1. Managing your project from the command line
 1. Developing your project in your text editor
 1. Testing your project in a browser
