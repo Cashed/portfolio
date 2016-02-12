@@ -1,11 +1,21 @@
 # Create a Professional Website
 
-You're assignment is to create a professional website for yourself.
+Your assignment is to create a professional website for yourself. The objective is to combine all the learnings from your first week into one project. Specifically, you're be expected to integrate the following concepts.
 
-1. Create a project in your development environment
-1. Manage your project from the command line
-1. Develop your project in your text editor
+1. Designing your website with wireframes
+1. Creating a project using your development environment
+1. Managing your project from the command line
+1. Developing your project in your text editor
 1. Test your project in the browser
-1. Commit your project to a Git repository
-1. Share your project to others with GitHub
-1. Deploy your project to a production environment
+1. Integrating [Bootstrap][Bootstrap] into your project
+1. Committing your project to a Git repository
+1. Publishing your project with GitHub
+1. Deploying your project to a production environment like [Surge][Surge]
+
+Talking about oneself is hard and takes practice. This project will start to get the juices flowing about how you want to describe yourself.
+
+- If you're feeling more serious, describe your past work history, projects, and outcomes.
+- If you're feeling more light-hearted, describe where you see yourself in 1, 5, or 10 years from now.
+
+[Bootstrap](http://getbootstrap.com/getting-started/)
+[Surge](http://surge.sh/help/getting-started-with-surge)
