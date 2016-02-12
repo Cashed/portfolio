@@ -18,5 +18,5 @@ Talking about oneself is hard and takes practice. This project will start to get
 - If you're feeling more serious, describe your past work history, projects, and outcomes.
 - If you're feeling more light-hearted, describe where you see yourself in 1, 5, or 10 years from now.
 
-[Bootstrap](http://getbootstrap.com/getting-started/)
-[Surge](http://surge.sh/help/getting-started-with-surge)
+[Bootstrap]: http://getbootstrap.com/getting-started/
+[Surge]: http://surge.sh/help/getting-started-with-surge
