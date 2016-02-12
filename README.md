@@ -9,8 +9,8 @@ Your assignment is to create a professional website for yourself. The objective 
 1. Developing your project in your text editor
 1. Testing your project in a browser
 1. Integrating [Bootstrap][Bootstrap] into your project
-1. Committing your project to a Git repository
-1. Publishing your project with GitHub
+1. Committing your changes to the local Git repository
+1. Pushing your commits back to GitHub
 1. Deploying your project to a production environment like [Surge][Surge]
 
 Talking about oneself is hard and takes practice. This project will start to get the juices flowing about how you want to describe yourself.
