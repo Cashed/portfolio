@@ -26,5 +26,7 @@ Talking about oneself is hard and takes practice. This project is a great opport
 - Limit your project to anywhere between 1 and 3 three pages.
 - Write clean, well-indented, and readable code. It may take you a little longer, but it'll be easier find bugs.
 
+Good luck and have fun!
+
 [Bootstrap]: http://getbootstrap.com/getting-started/
 [Surge]: http://surge.sh/help/getting-started-with-surge
