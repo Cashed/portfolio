@@ -1,7 +1,15 @@
+body {
+  /*padding-top: 50px;*/
+}
+
 header {
   background-image: url("../images/masthead-background.jpeg");
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+  background-size: cover;
   background-position: center;
   color: white;
+}
+
+.navbar {
+background: rgba(0, 0, 0, 0.5);;
 }
