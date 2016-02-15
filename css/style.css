@@ -1,10 +1,20 @@
+/*General*/
+
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #d6c3fd;
 }
 
 .top-buffer {
-    margin-top: 30px;
+  margin-top: 30px;
 }
+
+
+h1 {
+  font-weight: 800;
+}
+
+/*Header and Navbar*/
 
 header {
   background-image: url("../images/masthead-background.jpeg");
@@ -17,7 +27,18 @@ header {
 }
 
 .navbar {
-background: rgba(0, 0, 0, 0.5);
+  background: #828D9A;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-weight: 400;
+}
+
+.navbar-inverse .nav li a {
+  color: white;
+  font-weight: 400;
 }
 
 .intro-text {
@@ -29,21 +50,21 @@ background: rgba(0, 0, 0, 0.5);
   font-weight: 800;
 }
 
+/*Tree Border*/
+
 .border {
   position: absolute;
   bottom: 0;
 }
 
+/*Portfolio*/
+
 #portfolio {
-  background-color: #D6C3FD;
+  background: url("../images/flock_o_birds.png") bottom left no-repeat;
   color: white;
   text-align: center;
   padding-bottom: 30rem;
   position: relative;
-}
-
-h1 {
-  font-weight: 800;
 }
 
 #portfolio img {
@@ -56,4 +77,22 @@ h1 {
   font-size: 16pt;
 }
 
-button {}
+/*About*/
+
+#about {
+  background-color: #FDD7B0;
+  color: white;
+  text-align: center;
+  padding-bottom: 30rem;
+  position: relative;
+}
+
+#about h1 {
+  margin-top: 0;
+}
+
+#about .me-pic{
+  margin: 35px auto;
+  height: 150px;
+  border: 2px solid orange;
+}
