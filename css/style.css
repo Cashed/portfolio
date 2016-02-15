@@ -1,5 +1,9 @@
 body {
-  /*padding-top: 50px;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top-buffer {
+    margin-top: 30px;
 }
 
 header {
@@ -7,7 +11,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 15rem;
   color: white;
+  position: relative;
 }
 
 .navbar {
@@ -20,5 +26,34 @@ background: rgba(0, 0, 0, 0.5);
 
 .intro-name {
   font-size: 42pt;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
+
+.border {
+  position: absolute;
+  bottom: 0;
+}
+
+#portfolio {
+  background-color: #D6C3FD;
+  color: white;
+  text-align: center;
+  padding-bottom: 30rem;
+  position: relative;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+#portfolio img {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+#portfolio p {
+  margin-top: 30px;
+  font-size: 16pt;
+}
+
+button {}
