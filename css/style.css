@@ -11,5 +11,14 @@ header {
 }
 
 .navbar {
-background: rgba(0, 0, 0, 0.5);;
+background: rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+  padding: 15rem 0;
+}
+
+.intro-name {
+  font-size: 42pt;
+  font-family: 'Open Sans', sans-serif;
 }
