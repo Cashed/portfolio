@@ -94,5 +94,43 @@ header {
 #about .me-pic{
   margin: 35px auto;
   height: 150px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;;
+  content: "";
+  width: 5px;
+  background-color: orange;
+}
+
+@media (max-width: 1200px) {
+  .timeline:before{
+    background-color: #FDD7B0;
+  }
+}
+
+.timeline li {
+  margin-bottom: 75px;
+}
+
+.timeline-pic img {
+  max-height: 250px;
   border: 2px solid orange;
+  border-radius: 100%;
+}
+
+.timeline-panel {
+  text-align: right;
+}
+
+.timeline-panel-reverse {
+  text-align: left;
 }
