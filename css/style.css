@@ -11,7 +11,15 @@ body {
 
 
 h1 {
+  margin-top: 0;
   font-weight: 800;
+  color: white;
+
+}
+
+h2 {
+  font-family: 'Slabo 27px', serif;
+  color: white;
 }
 
 /*Header and Navbar*/
@@ -36,9 +44,19 @@ header {
   font-weight: 400;
 }
 
+.navbar-inverse .navbar-brand:hover {
+  background-color: #5F5E5E;
+}
+
 .navbar-inverse .nav li a {
+  font-family: 'Slabo 27px', serif;
+  font-size: 14pt;
   color: white;
   font-weight: 400;
+}
+
+.navbar-inverse .nav li a:hover {
+  background-color: #5F5E5E;
 }
 
 .intro-text {
@@ -48,6 +66,10 @@ header {
 .intro-name {
   font-size: 42pt;
   font-weight: 800;
+}
+
+.intro-name button {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*Tree Border*/
@@ -61,10 +83,14 @@ header {
 
 #portfolio {
   background: url("../images/flock_o_birds.png") bottom left no-repeat;
-  color: white;
+  color: #AF9090;
   text-align: center;
   padding-bottom: 30rem;
   position: relative;
+}
+
+#portfolio h1{
+  color: white;
 }
 
 #portfolio img {
@@ -81,14 +107,10 @@ header {
 
 #about {
   background-color: #FDD7B0;
-  color: white;
+  color: #AF9090;
   text-align: center;
   padding-bottom: 30rem;
   position: relative;
-}
-
-#about h1 {
-  margin-top: 0;
 }
 
 #about .me-pic{
@@ -104,11 +126,11 @@ header {
 
 .timeline:before {
   top: 0;
-  bottom: 0;
+  bottom: 35px;
   position: absolute;;
   content: "";
   width: 5px;
-  background-color: orange;
+  background-color: #CE9733;
 }
 
 @media (max-width: 1200px) {
@@ -117,13 +139,17 @@ header {
   }
 }
 
+#about p {
+  font-size: 16pt;
+}
+
 .timeline li {
   margin-bottom: 75px;
 }
 
 .timeline-pic img {
   max-height: 250px;
-  border: 2px solid orange;
+  border: 5px solid #CE9733;
   border-radius: 100%;
 }
 
@@ -133,4 +159,24 @@ header {
 
 .timeline-panel-reverse {
   text-align: left;
+}
+
+.corner-fern {
+  position: absolute;
+  bottom: 5%;
+  left: 65%;
+
+}
+
+/*Contact*/
+
+#contact {
+  background-color: #6F93C9;
+  color: #AF9090;
+  text-align: center;
+  position: relative;
+}
+
+#contact h1{
+  margin-bottom: 50px;
 }
