@@ -31,5 +31,5 @@ Good luck and have fun!
 [Bootstrap]: http://getbootstrap.com/getting-started/
 [Surge]: http://surge.sh/help/getting-started-with-surge
 
-WIREFRAME : kindly-beast.surge.sh/wireframe
-PRODUCTION ENVIRONMENT : kindly-beast.surge.sh
+[WIREFRAME] : cashed.surge.sh/wireframe  
+[PRODUCTION ENVIRONMENT] : cashed.surge.sh
