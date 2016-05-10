@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #d6c3fd;
+  background-color: #828D9A;
 }
 
 .top-buffer {
@@ -82,7 +82,7 @@ header {
 /*Portfolio*/
 
 #portfolio {
-  background: url("../images/flock_o_birds.png") bottom left no-repeat;
+  background: url("../images/flock_o_birds.png") bottom left no-repeat, #d6c3fd;
   color: #AF9090;
   text-align: center;
   padding-bottom: 30rem;
@@ -106,7 +106,7 @@ header {
 /*About*/
 
 #about {
-  background-color: #FDD7B0;
+  background: url('../images/flock_o_birds2.png') bottom right no-repeat, #FDD7B0;
   color: #AF9090;
   text-align: center;
   padding-bottom: 30rem;
@@ -171,12 +171,14 @@ header {
 /*Contact*/
 
 #contact {
-  background-color: #6F93C9;
-  color: #AF9090;
+  background: #6F93C9;
+  color: white;
   text-align: center;
   position: relative;
 }
 
-#contact h1{
+#contact .fa-2x{
   margin-bottom: 50px;
+  color: white;
+  font-size: 5em;
 }
