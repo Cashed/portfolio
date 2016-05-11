@@ -25,13 +25,12 @@ h2 {
 /*Header and Navbar*/
 
 header {
-  background-image: url("../images/masthead-background1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 15rem;
+  background: transparent;
   color: white;
+  min-height: 500px;
+  padding-bottom: 15rem;
   position: relative;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .navbar {
@@ -82,7 +81,7 @@ header {
 /*Portfolio*/
 
 #portfolio {
-  background: url("../images/flock_o_birds.png") bottom left no-repeat, #d6c3fd;
+  background: url("../images/flock_o_birds.png") bottom left no-repeat, #D2B2F8;
   color: #AF9090;
   text-align: center;
   padding-bottom: 30rem;
@@ -171,7 +170,7 @@ header {
 /*Contact*/
 
 #contact {
-  background: #6F93C9;
+  background: #7493CC;
   color: white;
   text-align: center;
   position: relative;
