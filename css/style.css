@@ -80,6 +80,13 @@ header {
 
 /*Portfolio*/
 
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  z-index: 0;
+}
+
 #portfolio {
   background: url("../images/flock_o_birds.png") bottom left no-repeat, #D2B2F8;
   color: #AF9090;
