@@ -14,12 +14,11 @@
   $(window).resize(respondCanvas);
 
   function respondCanvas() {
-    console.log(container.width());
     canvas.height = container.height() - 200;
     canvas.width = container.width() / 2;
 
     tri = {
-      color: '#D8BCF8',
+      color: '#DBC0FA',
       leftY: canvas.height - 200,
       leftX: 0,
       rightY: canvas.height - 200,
@@ -39,7 +38,7 @@
 
     for (var i = 0; i < iterateMax; i++) {
       for (i in triangles) {
-        if (triangles[i].color === '#D8BCF8') {
+        if (triangles[i].color === '#DBC0FA') {
           tri = {
             color: '#D2B2F8',
             leftY: (triangles[i].leftY + triangles[i].topY) / 2,
@@ -55,7 +54,7 @@
 
           // top
           tri = {
-            color: '#D8BCF8',
+            color: '#DBC0FA',
             leftY: (triangles[i].leftY + triangles[i].topY) / 2,
             leftX: (triangles[i].leftX + triangles[i].topX) / 2,
             rightY: (triangles[i].rightY + triangles[i].topY) / 2,
@@ -68,7 +67,7 @@
 
           // left
           tri = {
-            color: '#D8BCF8',
+            color: '#DBC0FA',
             leftY: triangles[i].leftY,
             leftX: triangles[i].leftX,
             rightY: (triangles[i].rightY + triangles[i].leftY) / 2,
@@ -82,7 +81,7 @@
 
           // right
           tri = {
-            color: '#D8BCF8',
+            color: '#DBC0FA',
             leftY: (triangles[i].leftY + triangles[i].rightY) / 2,
             leftX: (triangles[i].leftX + triangles[i].rightX) / 2,
             rightY: triangles[i].rightY,
@@ -124,7 +123,6 @@
     var lastScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     window.addEventListener('scroll', function() {
-
       if (body.scrollTop >= 700 && body.scrollTop <= 900) {
         if ((body.scrollTop > lastScroll) && (iterate < 8)){
           iterate++;
@@ -137,7 +135,7 @@
 
           iterate--;
           fractalIteration(iterate);
-          
+
           lastScroll = window.pageYOffset || document.documentElement.scrollTop;
         }
       }

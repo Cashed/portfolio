@@ -99,7 +99,7 @@ header {
   color: white;
 }
 
-#portfolio img {
+.portPic {
   max-width: 100%;
   margin-top: 30px;
 }
