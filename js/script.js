@@ -1,9 +1,17 @@
 $(document).ready(function() {
-  $('header').parallax({
+  $('.main-header').parallax({
     imageSrc: "images/masthead-background1.jpg",
     naturalHeight: 2848,
     naturalWidth: 4288,
-    speed: 0.6
+    speed: 0.5
+    }
+  );
+
+  $('.unity-header').parallax({
+    imageSrc: "images/unity.jpg",
+    naturalHeight: 422,
+    naturalWidth: 750,
+    speed: 0.5
     }
   );
 

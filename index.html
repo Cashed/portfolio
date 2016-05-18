@@ -63,7 +63,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class='main-header'>
       <div class="container">
         <div class="col-md-8">
           <div class="intro-text">
@@ -93,43 +93,60 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-      <canvas id="canvas"></canvas>
+      <!-- <canvas id="canvas"></canvas> -->
       <div class="container">
         <h1>PORTFOLIO</h1>
         <div class="row top-buffer">
           <div class="col-md-4">
             <h2>Star-Chat</h2>
             <a href="http://star-chat.surge.sh" target="_blank">
-              <img src="images/star_chat.png" class="center-block portPic" height="200" alt="Star-Chat Picard">
+              <img src="images/star_chat.png" class="center-block portPic" height="125" alt="Star-Chat Picard">
             </a>
-            <p>Star-Chat was built with jQuery, Firebase, and pure love.</p>
+            <p>A Star Trek chat-room experience built with jQuery, Firebase, and pure love.</p>
+            <a href="https://github.com/Cashed/star-chat" target="_blank">
+              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
+            </a>
           </div>
           <div class="col-md-4">
             <h2>Galvanize Reads</h2>
             <a href="https://galvanize-reeds.herokuapp.com/" target="_blank">
-              <img src="http://www.rainbowstarbooks.com/files/2246768/uploaded/rs_logo_icon_RGB.gif" class="center-block portPic" height="200" alt="New York Times thumbnail">
+              <img src="http://www.rainbowstarbooks.com/files/2246768/uploaded/rs_logo_icon_RGB.gif" class="center-block portPic" height="125" alt="Galvanize Reads Image">
             </a>
             <p>This project incorporated NodeJS and ExpressJS. I hope you have enough AOL hours left.</p>
-            <a href="https://galvanize-reeds.herokuapp" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  GitHub Repo</button>
+            <a href="https://github.com/Cashed/galvanize-reads" target="_blank">
+              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
             </a>
           </div>
           <div class="col-md-4">
             <h2>Insurance Compliance</h2>
             <a href="https://snp-omt.herokuapp.com" target="_blank">
-              <img src="images/insurance_pie.png" class="center-block portPic" height="200" alt="Street Fighter thumbnail">
+              <img src="images/insurance_pie.png" class="center-block portPic" height="125" alt="Insurance App Pie Chart">
             </a>
             <p>A full-stack group project designed to help insurers stay within government compliance.</p>
-            <a href="https://github.com/Cashed/jquery-streetfighter" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  GitHub Repo</button>
+            <a href="https://github.com/Cashed/SNP_OMT" target="_blank">
+              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
             </a>
+          </div>
+        </div>
+        <div class='row top-buffer'>
+          <div class='col-md-4'>
             <h2>Runnit</h2>
             <a href="http://reddit-clone.surge.sh" target="_blank">
-              <img src="http://static.tumblr.com/640b093f45f7b5b330a371b1b5f15930/jdwgqx8/lVKn7ubmn/tumblr_static_c6bful52magc80wsg0g008csw.png" class="center-block portPic" height="200" alt="fridge">
+              <img src="http://static.tumblr.com/640b093f45f7b5b330a371b1b5f15930/jdwgqx8/lVKn7ubmn/tumblr_static_c6bful52magc80wsg0g008csw.png" class="center-block portPic" height="125" alt="Shadowrun Icon">
             </a>
             <p>A Shadowrun themed Reddit clone built on AngularJS.</p>
-            <a href="https://github.com/Cashed/shopping-list" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  GitHub Repo</button>
+            <a href="https://github.com/Cashed/reddit-clone" target="_blank">
+              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
+            </a>
+          </div>
+          <div class='col-md-4'>
+            <h2>Adventures in Unity</h2>
+            <a href="unity.html" target="_blank">
+              <img src="images/unity-icon.png" class="center-block portPic" height="125" alt="Unity Icon">
+            </a>
+            <p>Read on as I grok the Unity game engine.</p>
+            <a href="unity.html" target="_blank">
+              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-code fa-lg" aria-hidden="true"></i>  Article</button>
             </a>
           </div>
         </div>
@@ -150,7 +167,7 @@
             <ul class="timeline top-buffer">
               <li>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 infoChunk1">
                     <div class="timeline-panel">
                       <div class="timeline-heading">
                         <h2>Pacific Northwest Awesomeness</h2>
@@ -169,7 +186,7 @@
               </li>
               <li>
                 <div class="row">
-                  <div class="col-md-4 col-md-push-8">
+                  <div class="col-md-4 col-md-push-8 infoChunk2">
                     <div class="timeline-panel-reverse">
                       <div class="timeline-heading">
                         <h2>Indoor Fun</h2>
@@ -188,13 +205,13 @@
               </li>
               <li>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 infoChunk3">
                     <div class="timeline-panel">
                       <div class="timeline-heading">
                         <h2>Programming</h2>
                       </div>
                       <div class="timeline-body">
-                        <p>I began my programming journey by taking the Computer Science academic route, but now I am stoked to be here at Galvanize. Programming is an outlet for my creativity. I have interests ranging from robotics to web design. </p>
+                        <p>I began my programming journey by taking the computer science academic route, but now I am stoked to be here at Galvanize. Programming is an outlet for my creativity. I have interests from embedded systems to web design. </p>
                       </div>
                     </div>
                   </div>
@@ -237,6 +254,6 @@
     </section>
     <script src='js/parallax.min.js'></script>
     <script src='js/script.js'></script>
-    <script src='js/triangles.js'></script>
+    <!-- <script src='js/triangles.js'></script> -->
   </body>
 </html>
