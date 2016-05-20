@@ -189,3 +189,10 @@ header {
   color: white;
   font-size: 5em;
 }
+
+.memory img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
