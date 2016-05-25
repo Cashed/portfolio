@@ -50,37 +50,44 @@
 
     <!-- Contact -->
     <section id="contact">
-      <iframe src='https://s3-us-west-2.amazonaws.com/cashed-unity/index.html' width='1024px' height='720px'></iframe>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h1>say hello to me here:</h1>
-      <div class="container top-buffer">
-        <div class="col-md-offset-3 col-md-2">
-          <a href="https://github.com/Cashed" target="_blank">
-            <i class="fa fa-github-square fa-2x"></i>
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a  href="https://www.linkedin.com/in/veronica-moreno-602263b7" target="_blank">
-            <i class="fa fa-linkedin-square fa-2x"></i>
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="mailto:frau.veronika@gmail.com">
-            <i class="fa fa-envelope-o fa-2x"></i>
-          </a>
-        </div>
+      <div class='container'>
+        <p>Unity is an amazing platform for building virtual environments, especially games.  As anyone who has ever played a game can tell you, virtual environments can affect us emotionally.  People might not always remember the name of the main character, the plot, or level details, but people will always remember how certain games made them feel.  With this in mind, I believe technology has the ability to heal us emotionally as well.  </p>
+        <p>	However, I’m getting ahead of myself.  For now, I would like to learn how to create ANY virtual environment, and this is why I decided to dive into Unity 5 with help from <a href='https://app.pluralsight.com/library/courses/introduction-unity-5-2046/description'>this tutorial</a> on PluralSight.  I originally intended to get this all together on one post, but now I feel like it makes more sense to split this up into two or three parts.</p>
+        <p>	In this project, I am creating a 3D desert environment with red sand and towering sandstone rocks.  The rocks were imported as an asset package in Unity and include a model and a mesh.  The model is the basic structure and the mesh is what lays over the structure and gives it additional detail.  When you add a mesh as a component to the model, you create a prefab.</p>
+        <img src='images/unity/rock-assets-scene.png'/>
+        <p>In the above picture, you can see all the prefab rocks listed in the project view.  I experimented with them in the scene view just to see what they looked like and how they behaved. In the scene view, you can manipulate the position and orientation of each prefab in pretty much whatever way you want.</p>
+        <p>	Now, it was time to give these rocks a home.  In Unity, all objects inherit from the GameObject.  So, setting up basic terrain was as simple as creating a new GameObject and assigning it X, Y, and Z values until I had a nice light gray rectangular prism.  Then I could assume a top-down view and begin creating detail.  After creating texture with a brush, like a kid in a sandbox might use his finger, I used another brush tool to carve out paths.</p>
+        <img src='images/unity/terrain-paths.png'/>
+        <p>From above, I thought that my terrain might be too small.  However, as you can see, the sides on the path can scale quite largely depending on the player’s point of view.  Because of this, it is very helpful to place a model of the player in the scene every so often to help gauge scale.</p>
+        <p>	Once that was complete, I added some texture assets to create a sandy, rocky landscape and spotted it with some dried grass.  I also placed a bunch of the rock prefabs I had created earlier.</p>
+        <img src='images/unity/terrain-detail.png'/>
+        <p>Creating landscapes in Unity is actually quite Zen.  I felt like Bob Ross doing a 3D painting.</p>
+        <p>	This place was feeling pretty lonely, so for the next step I added in a little robot buddy.  Unfortunately, I didn’t take any screenshots of that process (I know, I’m sorry!).  But he was basically another asset model.  Actually, he was a few models; each for a different state such as idling, running, or walking.  Each state of the model can include an animation component that is triggered to play when certain conditions are met, such as a boolean called IsRunning.</p>
+        <p>	These conditions are controlled via C# scripts that are added as a component to the robot player object.  Here is the script for getting robot buddy to move around the terrain:</p>
+        <p>This is where I am currently running into a bug.  The W and S keys control his vertical movement, but the direction is backwards.  I have a few ideas on changes I could make, but I’m going to leave it for next time since this is already getting pretty lengthy.  Below, you can check out the progress so far!</p>
+        <iframe src='https://s3-us-west-2.amazonaws.com/cashed-unity/index.html' width='1024px' height='720px'></iframe>
+        <p>Next up, I would like to tackle changing camera angle by mouse and giving robot buddy a purpose in this world.</p>
+      </div>
+
+      <footer>
+        <h1>say hello to me here:</h1>
+        <div class="container top-buffer">
+          <div class="col-md-offset-3 col-md-2">
+            <a href="https://github.com/Cashed" target="_blank">
+              <i class="fa fa-github-square fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a  href="https://www.linkedin.com/in/veronica-moreno-602263b7" target="_blank">
+              <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a href="mailto:frau.veronika@gmail.com">
+              <i class="fa fa-envelope-o fa-2x"></i>
+            </a>
+          </div>
+        </footer>
       </div>
     </section>
     <script src='js/parallax.min.js'></script>

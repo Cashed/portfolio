@@ -8,7 +8,7 @@ $(document).ready(function() {
   );
 
   $('.unity-header').parallax({
-    imageSrc: "images/unity.jpg",
+    imageSrc: "images/unity/unity.jpg",
     naturalHeight: 422,
     naturalWidth: 750,
     speed: 0.5
