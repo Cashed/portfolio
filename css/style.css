@@ -179,7 +179,7 @@ header {
 
 #contact {
   background: #6E90CD;
-  color: #774646;
+  color: #E8E8E8;
   font-size: 13pt;
 }
 
@@ -195,9 +195,40 @@ header {
   font-size: 5em;
 }
 
+.image-grow-wrapper {
+  width: 250px;
+}
+
+#contact .game-image {
+  width: 60%;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #503A3A;
+  /*z-index: 1;
+  position: absolute;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;*/
+}
+
+/*#contact .game-image:hover {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  transform:scale(1.2);
+}*/
+
 .memory img {
   width: 50px;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.float-left {
+  float: left;
 }
