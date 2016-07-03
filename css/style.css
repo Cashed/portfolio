@@ -43,7 +43,7 @@ header {
   text-shadow: 2px 2px 2px black;
 }
 
-.front-desc {
+.front-desc, .front-loc {
   font-size: 24pt;
 }
 
@@ -92,7 +92,7 @@ header {
 }
 
 .intro-name {
-  font-size: 42pt;
+  font-size: 47pt;
   font-weight: 800;
 }
 
