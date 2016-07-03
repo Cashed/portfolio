@@ -14,12 +14,14 @@ h1 {
   margin-top: 0;
   font-weight: 800;
   color: white;
-
 }
 
 h2 {
-  font-family: 'Slabo 27px', serif;
   color: white;
+}
+
+.btn {
+  outline: none;
 }
 
 /*Header and Navbar*/
@@ -41,9 +43,21 @@ header {
   text-shadow: 2px 2px 2px black;
 }
 
+.front-desc {
+  font-size: 24pt;
+}
+
+.navSwitch {
+  transition: 0.5s ease;
+}
+
 .navbar {
-  background: #828D9A;
+  background: transparent;
   border: none;
+}
+
+.solidBackground {
+  background: #013275;
 }
 
 .navbar-inverse .navbar-brand {
@@ -52,18 +66,25 @@ header {
 }
 
 .navbar-inverse .navbar-brand:hover {
-  background-color: #5F5E5E;
+  background-color: #013275;
 }
 
 .navbar-inverse .nav li a {
-  font-family: 'Slabo 27px', serif;
   font-size: 14pt;
   color: white;
   font-weight: 400;
 }
 
 .navbar-inverse .nav li a:hover {
-  background-color: #5F5E5E;
+  background-color: #013275;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: white;
 }
 
 .intro-text {
@@ -97,8 +118,8 @@ header {
 
 #portfolio {
   background: url("../images/flock_o_birds.png") bottom left no-repeat, #D2B2F8;
-  color: #AF9090;
   text-align: center;
+  color: white;
   padding-bottom: 30rem;
   position: relative;
 }
@@ -107,15 +128,91 @@ header {
   color: white;
 }
 
-.portPic {
-  max-width: 100%;
-  margin-top: 30px;
+#portfolio h4 {
+  color: black;
 }
 
-#portfolio p {
-  margin-top: 30px;
-  font-size: 16pt;
+.modal-body p {
+  text-align: left;
+  color: black;
+  font-size: 13pt;
 }
+
+#portfolio ul {
+  font-size: 13pt;
+  color: black;
+  text-align: left;
+  list-style: none;
+}
+
+#portfolio img {
+  border-radius: 5px;
+}
+
+.modal-title {
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.project-display {
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.project-display:hover {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+
+.project-hovered {
+  position: relative;
+  padding: 0;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.hovered-details {
+  position: absolute;
+  background-color: #013275;
+  z-index: 1;
+  border-radius: 5px;
+  color: white;
+  height: 200px;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.project-title {
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 22pt;
+  font-style: 'Open Sans', sans-serif;
+}
+
+.project-desc {
+  font-size: 16pt;
+  font-style: italic;
+}
+
+.hovered-details:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 0.3s ease;
+}
+
+
+
 
 /*About*/
 
@@ -189,10 +286,15 @@ header {
   position: relative;
 }
 
-#contact .fa-2x{
+#contact .fa-2x {
   margin-bottom: 50px;
   color: white;
   font-size: 5em;
+}
+
+#contact .fa-2x:hover {
+  color: #013275;
+  transition: 0.3s ease;
 }
 
 .image-grow-wrapper {

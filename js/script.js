@@ -15,6 +15,17 @@ $(document).ready(function() {
     }
   );
 
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 600) {
+      $('.navbar').addClass('solidBackground');
+    }
+    else {
+      $('.navbar').removeClass('solidBackground');
+    }
+  });
+
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);

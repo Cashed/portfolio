@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"/>
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
 
     <!-- Custom Fonts -->
@@ -28,7 +29,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navSwitch navbar-inverse navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -69,16 +70,15 @@
           <div class="intro-text">
             <div class="intro-name">
               <div class="row">
-                <p>VERONICA MORENO</p>
-              </div>
-              <div class="row top-buffer">
-                <p>WEB</p>
+                <p class='front-name'>VERONICA MORENO</p>
               </div>
               <div class="row">
-                <p>DEVELOPER</p>
-                <div class="col-md-4 col-md-offset-9">
+                <p class='front-desc'>CREATIVE WEB DEVELOPMENT</p>
+                <br/>
+                <br/>
+                <div class="col-md-4">
                   <a href="mailto:vee@veronica-moreno.com">
-                    <button class="btn-lg btn-warning">Contact Me!</button>
+                    <button class="btn-lg btn-warning">Contact Me</button>
                   </a>
                 </div>
               </div>
@@ -93,71 +93,162 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
+      <div class="modal fade" id="starChat" tabindex="-1" role="dialog" aria-labelledby="starChat-information">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="starChat-label">Star Chat</h4>
+            </div>
+            <div class="modal-body">
+              <div class='row'>
+                <div class='col-sm-5 app-screenshot'>
+                  <img src="images/starChat-screen.png" alt="screenshot of star-chat">
+                </div>
+                <div class='col-sm-5 col-sm-offset-1 app-details'>
+                  <p>Star Chat is a web app for those who find that sometimes the only way to truly express themselves is with an appropriate Star Trek picture. This app attempts to transport the user into a total Star Trek communication experience.</p>
+                  <ul><strong style='text-decoration: underline'>Tech Stack</strong>
+                    <li>HTML/CSS</li>
+                    <li>jQuery</li>
+                    <li>Firebase API</li>
+                  </ul>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6 app-buttons'>
+                  <a href="https://github.com/Cashed/star-chat" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  &nbsp Source Code</button>
+                  </a>
+                  <a href="https://github.com/Cashed/star-chat" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="runnit" tabindex="-1" role="dialog" aria-labelledby="runnit-information">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="runnit-label">Runnit</h4>
+            </div>
+            <div class="modal-body">
+              <div class='row'>
+                <div class='col-sm-5 app-screenshot'>
+                  <img src="images/runnit.png" alt="screenshot of runnit">
+                </div>
+                <div class='col-sm-5 col-sm-offset-1 app-details'>
+                  <p>Runnit is a Reddit clone app built on AngularJS. I had been playing a lot of Shadowrun on the SNES while going through the Angular curriculum and I fell in love with how much work went into building the world within the game. This is my homage.</p>
+                  <ul><strong style='text-decoration: underline'>Tech Stack</strong>
+                    <li>Bootstrap</li>
+                    <li>CSS3</li>
+                    <li>AngularJS</li>
+                    <li>SoundCloud API</li>
+                  </ul>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6 app-buttons'>
+                  <a href="https://github.com/Cashed/reddit-clone" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  &nbsp Source Code</button>
+                  </a>
+                  <a href="http://reddit-clone.surge.sh" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="mean-pots" tabindex="-1" role="dialog" aria-labelledby="mean-pots-information">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="mean-pots-label">MEAN Pots</h4>
+            </div>
+            <div class="modal-body">
+              <div class='row'>
+                <div class='col-sm-5 app-screenshot'>
+                  <img src="images/mean-pots.png" alt="screenshot of runnit">
+                </div>
+                <div class='col-sm-5 col-sm-offset-1 app-details'>
+                  <p>This is a potion shopping app built on the MEAN stack. Users are presented with inventory that they may filter based on category and/or keyword. Potions can be added to the 'bag of holding' (cart) and then checked out.</p>
+                  <ul><strong style='text-decoration: underline'>Tech Stack</strong>
+                    <li>Bootstrap</li>
+                    <li>AngularJS</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>MongoDB<li>
+                  </ul>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6 app-buttons'>
+                  <a href="https://github.com/Cashed/potion-shop" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  &nbsp Source Code</button>
+                  </a>
+                  <a href="https://mean-pots.herokuapp.com/" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- <canvas id="canvas"></canvas> -->
       <div class="container">
         <h1>PORTFOLIO</h1>
-        <div class="row top-buffer">
-          <div class="col-md-4">
-            <h2>Star-Chat</h2>
-            <a href="http://star-chat.surge.sh" target="_blank">
-              <img src="images/star_chat.png" class="center-block portPic" height="125" alt="Star-Chat Picard">
-            </a>
-            <p>A Star Trek chat-room experience built with jQuery, Firebase, and pure love.</p>
-            <a href="https://github.com/Cashed/star-chat" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
-            </a>
+        <div class="row">
+          <div class="col-md-4 top-buffer">
+            <div class='project-hovered' >
+              <div class='hovered-details' type='button' data-toggle='modal' data-target='#starChat'>
+                <p class='project-title'>Star Chat</p>
+                <p class='project-desc'>Chat App</p>
+              </div>
+              <div class='project-display' style='background-image: url("images/starChat.png")'>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h2>Galvanize Reads</h2>
-            <a href="https://galvanize-reeds.herokuapp.com/" target="_blank">
-              <img src="http://www.rainbowstarbooks.com/files/2246768/uploaded/rs_logo_icon_RGB.gif" class="center-block portPic" height="125" alt="Galvanize Reads Image">
-            </a>
-            <p>This project incorporated NodeJS and ExpressJS. I hope you have enough AOL hours left.</p>
-            <a href="https://github.com/Cashed/g-reads" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
-            </a>
+          <div class='col-md-4 top-buffer'>
+            <div class='project-hovered'>
+              <div class='hovered-details' type='button' data-toggle='modal' data-target='#runnit'>
+                <p class='project-title'>Runnit</p>
+                <p class='project-desc'>Reddit Clone</p>
+              </div>
+              <div class='project-display' style='background-image: url("images/runnit-thumb.png")'></div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h2>Insurance Compliance</h2>
-            <a href="https://snp-omt.herokuapp.com" target="_blank">
-              <img src="images/insurance_pie.png" class="center-block portPic" height="125" alt="Insurance App Pie Chart">
-            </a>
-            <p>A full-stack group project designed to help insurers stay within government compliance.</p>
-            <a href="https://github.com/Cashed/SNP_OMT" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
-            </a>
+          <div class='col-md-4 top-buffer'>
+            <div class='project-hovered'>
+              <div class='hovered-details' type='button' data-toggle='modal' data-target='#mean-pots'>
+                <p class='project-title'>MEAN Pots</p>
+                <p class='project-desc'>Shopping App</p>
+              </div>
+              <div class='project-display' style='background-image: url("images/mean-thumb1.png")'></div>
+            </div>
           </div>
-        </div>
-        <div class='row top-buffer'>
-          <div class='col-md-4'>
-            <h2>Runnit</h2>
-            <a href="http://reddit-clone.surge.sh" target="_blank">
-              <img src="http://static.tumblr.com/640b093f45f7b5b330a371b1b5f15930/jdwgqx8/lVKn7ubmn/tumblr_static_c6bful52magc80wsg0g008csw.png" class="center-block portPic" height="125" alt="Shadowrun Icon">
-            </a>
-            <p>A Shadowrun themed Reddit clone built on AngularJS.</p>
-            <a href="https://github.com/Cashed/reddit-clone" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
-            </a>
-          </div>
-          <div class='col-md-4'>
-            <h2>MEAN Pots</h2>
-            <a href="https://mean-pots.herokuapp.com/" target="_blank">
-              <img src="images/Rogue_wizard1.png" class="center-block portPic" height="125" alt="MEAN Pots logo">
-            </a>
-            <p>A potion shopping app built on the MEAN stack.</p>
-            <a href="https://github.com/Cashed/potion-shop" target="_blank">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  More Info</button>
-            </a>
-          </div>
-          <div class='col-md-4'>
-            <h2>Adventures in Unity</h2>
-            <a href="unity.html" target="_blank">
-              <img src="images/unity-icon.png" class="center-block portPic" height="125" alt="Unity Icon">
-            </a>
-            <p>Read on as I grok the Unity game engine.</p>
-            <a href="unity.html">
-              <button class="btn-lg btn-primary top-buffer"><i class="fa fa-code fa-lg" aria-hidden="true"></i>  Article</button>
-            </a>
+          <div class='col-md-4 top-buffer'>
+            <div class='project-hovered' style='margin-top: 30px'>
+              <a href="unity.html" target='_blank'>
+                <div class='hovered-details'>
+                  <p class='project-title'>Adventures in Unity</p>
+                  <p class='project-desc'>Article Series</p>
+                </div>
+                <div class='project-display' style='background-image: url("images/unity-thumb.png")'></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -171,7 +262,7 @@
       <h1>ABOUT</h1>
       <img src="images/Me2.png" class="img-responsive img-circle me-pic" alt="Picture of me"/>
       <div class="container">
-        <p>Hello! My name is Veronica and I hail from Kitsap County in Washington State.  I am currently attending the Galvanize full-stack program in Seattle and I am excited to be learning about web development. The internet has always seemed like magic, and while I unlock the secrets, I am still in awe of the power the web has to bring the world together one bit at a time. </p>
+        <p>Hello! My name is Veronica and I hail from Kitsap County in Washington State. I have interests ranging from embedded systems to web design and gaming. </p>
         <div class="row">
           <div class="col-md-12">
             <ul class="timeline top-buffer">
@@ -182,7 +273,7 @@
                       <div class="timeline-heading">
                         <h2>Pacific Northwest Awesomeness</h2>
                       </div>
-                      <div class="timeline-body">
+                      <div class="timeline-body animated slideInUp">
                         <p>The pacific northwest is the perfect place to get out and enjoy nature!  I love resetting by taking to the forest either on bike or foot and often accompanied by my dog, Ocho.</p>
                       </div>
                     </div>
@@ -221,7 +312,7 @@
                         <h2>Programming</h2>
                       </div>
                       <div class="timeline-body">
-                        <p>I began my programming journey by taking the computer science academic route, but now I am stoked to be here at Galvanize. Programming is an outlet for my creativity. I have interests from embedded systems to web design. </p>
+                        <p>Programming is an outlet for my creativity and I enjoy bringing the web to life with clean and thoughtful code.  I am particularly experienced in writing JavaScript and RESTful APIs built with NodeJS.</p>
                       </div>
                     </div>
                   </div>
