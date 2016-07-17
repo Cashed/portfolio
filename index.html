@@ -248,6 +248,46 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="infinite-garden" tabindex="-1" role="dialog" aria-labelledby="infinite-garden-information">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="infinite-garden-label">Infinite Garden</h4>
+            </div>
+            <div class="modal-body">
+              <div class='row'>
+                <div class='col-sm-5 app-screenshot'>
+                  <img src="images/infinite_garden_ss.png" alt="screenshot of infinite garden" width='400' height='250'>
+                </div>
+                <div class='col-sm-5 col-sm-offset-1 app-details'>
+                  <p>Infinite Garden is a collaborative project which seeks to give visitors a refuge away from online noise, and to observe the organic processes encoded in the environmental flora. Procedural algorithms, such as Perlin Noise, are used to generate the scene.</p>
+                  <ul><strong style='text-decoration: underline'>Tech Stack</strong>
+                    <li>Unity (WebGL)</li>
+                    <li>Turn.js</li>
+                    <li>AngularJS</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>PostgreSQL<li>
+                  </ul>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6 app-buttons'>
+                  <a href="https://github.com/Cashed/inifite-garden-site" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-github fa-lg"></i>  &nbsp Source Code</button>
+                  </a>
+                  <a href="https://infinite-garden.herokuapp.com/" target="_blank">
+                    <button class="btn btn-primary top-buffer"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- <canvas id="canvas"></canvas> -->
       <div class="container">
         <h1>PORTFOLIO</h1>
@@ -264,6 +304,24 @@
           </div>
           <div class='col-md-4 top-buffer'>
             <div class='project-hovered'>
+              <div class='hovered-details' type='button' data-toggle='modal' data-target='#infite-garden'>
+                <p class='project-title'>Infinite Garden</p>
+                <p class='project-desc'>3D Nature</p>
+              </div>
+              <div class='project-display' style='background-image: url("images/infinite_garden.png")'></div>
+            </div>
+          </div>
+          <div class='col-md-4 top-buffer'>
+            <div class='project-hovered'>
+              <div class='hovered-details' type='button' data-toggle='modal' data-target='#fly-beats'>
+                <p class='project-title'>FlyBeats</p>
+                <p class='project-desc'>3D WebGL Audio Game</p>
+              </div>
+              <div class='project-display' style='background-image: url("https://i.imgur.com/qIgSCR5.png")'></div>
+            </div>
+          </div>
+          <div class='col-md-4 top-buffer'>
+            <div class='project-hovered' style='margin-top: 30px'>
               <div class='hovered-details' type='button' data-toggle='modal' data-target='#runnit'>
                 <p class='project-title'>Runnit</p>
                 <p class='project-desc'>Reddit Clone</p>
@@ -272,21 +330,12 @@
             </div>
           </div>
           <div class='col-md-4 top-buffer'>
-            <div class='project-hovered'>
+            <div class='project-hovered' style='margin-top: 30px'>
               <div class='hovered-details' type='button' data-toggle='modal' data-target='#mean-pots'>
                 <p class='project-title'>MEAN Pots</p>
                 <p class='project-desc'>Shopping App</p>
               </div>
               <div class='project-display' style='background-image: url("images/mean-thumb1.png")'></div>
-            </div>
-          </div>
-          <div class='col-md-4 top-buffer'>
-            <div class='project-hovered' style='margin-top: 30px'>
-              <div class='hovered-details' type='button' data-toggle='modal' data-target='#fly-beats'>
-                <p class='project-title'>FlyBeats</p>
-                <p class='project-desc'>3D WebGL Audio Game</p>
-              </div>
-              <div class='project-display' style='background-image: url("https://i.imgur.com/qIgSCR5.png")'></div>
             </div>
           </div>
           <div class='col-md-4 top-buffer'>
