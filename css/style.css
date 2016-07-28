@@ -120,7 +120,7 @@ header {
   background: url("../images/flock_o_birds.png") bottom left no-repeat, #D2B2F8;
   text-align: center;
   color: white;
-  padding-bottom: 30rem;
+  padding: 10rem 0 30rem 0;
   position: relative;
 }
 
@@ -211,6 +211,18 @@ header {
   transition: 0.3s ease;
 }
 
+.app-details {
+  position: relative;
+}
+
+#refactor {
+  transform: rotate(-30deg);
+  position: absolute;
+  right: 10px;
+  font-size: 16pt;
+  font-weight: bold;
+  color: darkred;
+}
 
 
 
@@ -220,7 +232,7 @@ header {
   background: url('../images/flock_o_birds2.png') bottom right no-repeat, #FFD7AB;
   color: #AF9090;
   text-align: center;
-  padding-bottom: 30rem;
+  padding: 10rem 0 30rem 0;
   position: relative;
 }
 
@@ -278,6 +290,7 @@ header {
   background: #6E90CD;
   color: #E8E8E8;
   font-size: 13pt;
+  padding-top: 10rem;
 }
 
 #contact footer {
